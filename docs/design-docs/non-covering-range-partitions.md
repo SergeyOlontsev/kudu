@@ -189,7 +189,7 @@ dropped range partitions.
 
 The proposed changes to the client meta cache are a straightforward extension of
 the existing meta cache functionality, but they expose an edge case around
-handling non-existent range partitionss. In particular, every operation on a
+handling non-existent range partitions. In particular, every operation on a
 non-existent range partition will cause the meta cache to request tablet
 location information from the master. This includes easy to avoid cases such as
 the application continually writing to non-existent range partitions, but it
